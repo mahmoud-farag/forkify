@@ -103,11 +103,11 @@ const handleLocalStorage = function () {
   localStorage.setItem('bookmarks', JSON.stringify(AppState.bookmarks));
 };
 
-const getLocalStorage = function () {
-  const bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
-  if (bookmarks) AppState.bookmarks = bookmarks;
-};
-getLocalStorage();
+// const getLocalStorage = function () {
+//   const bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+//   if (bookmarks) AppState.bookmarks = bookmarks;
+// };
+// getLocalStorage();
 
 export const uploadRecipe = async function (newRecipe) {
   try {
